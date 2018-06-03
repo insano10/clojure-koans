@@ -1,0 +1,3 @@
+- instead of a function call foo(arg1, arg2), a lisp writes it as (foo arg1 arg2) with the first argument the function to be called followed by the arguments
+- as well as strings there are :keywords and 'symbols
+- there is hard (=) and loose (==) equality
