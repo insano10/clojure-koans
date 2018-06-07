@@ -1,3 +1,15 @@
 - instead of a function call foo(arg1, arg2), a lisp writes it as (foo arg1 arg2) with the first argument the function to be called followed by the arguments
 - as well as strings there are :keywords and 'symbols
 - there is hard (=) and loose (==) equality
+- \b is the char b (use backslash)
+
+functions:
+
+str - creates a string from 0 or more symbols
+get - index into something (e.g. string / list)
+count - count elements in something
+subs - substring
+string/split-lines - split a string on \n
+char? - is the argument a char
+string? - is the argument a string
+blank? - is a string empty or nil
