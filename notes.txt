@@ -2,6 +2,7 @@
 - as well as strings there are :keywords and 'symbols
 - there is hard (=) and loose (==) equality
 - \b is the char b (use backslash)
+- [1 2 3] is a vector, (1 2 3) is a list. Use a vector when accessing via index and a list when using as a sequence
 
 functions:
 
