@@ -14,3 +14,4 @@ string/split-lines - split a string on \n
 char? - is the argument a char
 string? - is the argument a string
 blank? - is a string empty or nil
+subvec - get a slice from a vector inclusive of lower bound, exclusive of upper bound
