@@ -3,6 +3,7 @@
 - there is hard (=) and loose (==) equality
 - \b is the char b (use backslash)
 - [1 2 3] is a vector, (1 2 3) is a list. Use a vector when accessing via index and a list when using as a sequence
+- #{1 2 3} is a set. You can create them from other collections using (set '(123))
 
 functions:
 
