@@ -7,6 +7,7 @@
 - {:a 1 :b 2} is a map
 - declare a named function using (defn [param1 param2] ())
 - declare an anonymous function using fn or #() (access parameters with %1 %2 etc.)
+- (let [foo 1 bar 2] ....) to define local variables within the parentheses
 
 
 - you can use transient data structures to build up collections, then turn them back into persistents for use
