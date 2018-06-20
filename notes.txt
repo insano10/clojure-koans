@@ -27,5 +27,6 @@ blank? - is a string empty or nil
 subvec - get a slice from a vector inclusive of lower bound, exclusive of upper bound
 assoc/dissoc - add/remove values from a map
 merge - combine 2 collections
+map/reduce/filter - take a function and a sequence to transform the sequence
 
 recur - perform tail recursion and jump back to the outer call site (fn or loop) with the specified args
