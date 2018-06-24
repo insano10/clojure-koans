@@ -4,15 +4,18 @@
 - \b is the char b (use backslash)
 - [1 2 3] is a vector, (1 2 3) is a list. Use a vector when accessing via index and a list when using as a sequence
 - #{1 2 3} is a set. You can create them from other collections using (set '(123))
-- {:a 1 :b 2} is a map
+- {:a 1 :b 2} is a map access in various ways:
+    - (let [m {1 "hi" 2 "bye"}] (m 1))
+    - (let [m {:a 1 :b 2}] (:a m))
 - declare a named function using (defn [param1 param2] ())
 - declare an anonymous function using fn or #() (access parameters with %1 %2 etc.)
 - (let [foo 1 bar 2] ....) to define local variables within the parentheses
 
-
 - you can use transient data structures to build up collections, then turn them back into persistents for use
   this is much faster than using persistents (https://clojure.org/reference/transients)
   use functions suffixed with ! on transient data structures
+
+- using & in an argument declaration will bind to the rest of the args to give varargs
 
 functions:
 
@@ -28,5 +31,6 @@ subvec - get a slice from a vector inclusive of lower bound, exclusive of upper 
 assoc/dissoc - add/remove values from a map
 merge - combine 2 collections
 map/reduce/filter - take a function and a sequence to transform the sequence
-
 recur - perform tail recursion and jump back to the outer call site (fn or loop) with the specified args
+interpose - insert a given separator between each element in a collection
+cons - create a new sequence from a head and rest
