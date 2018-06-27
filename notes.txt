@@ -34,3 +34,4 @@ map/reduce/filter - take a function and a sequence to transform the sequence
 recur - perform tail recursion and jump back to the outer call site (fn or loop) with the specified args
 interpose - insert a given separator between each element in a collection
 cons - create a new sequence from a head and rest
+iterate - returns a lazy sequence of repeatedly apply a function to a value
