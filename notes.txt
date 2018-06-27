@@ -16,6 +16,9 @@
   use functions suffixed with ! on transient data structures
 
 - using & in an argument declaration will bind to the rest of the args to give varargs
+- for comprehensions can have modifiers (like :when to filter) and you can iterate
+  through multiple sequences at the same time
+    - this means you can emulate mapping and filtering over a sequence
 
 functions:
 
