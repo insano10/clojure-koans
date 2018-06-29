@@ -22,6 +22,7 @@
 
 functions:
 
+doc - prints the doc for the given function (like javadoc)
 str - creates a string from 0 or more symbols
 get - index into something (e.g. string / list)
 count - count elements in something
@@ -38,3 +39,5 @@ recur - perform tail recursion and jump back to the outer call site (fn or loop)
 interpose - insert a given separator between each element in a collection
 cons - create a new sequence from a head and rest
 iterate - returns a lazy sequence of repeatedly apply a function to a value
+complement -takes a function and returns an identical one with the opposite boolean return value
+comp - compose a set of functions to return a function that does them all (right to left order)
