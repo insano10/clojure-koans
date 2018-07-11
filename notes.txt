@@ -19,6 +19,7 @@
 - for comprehensions can have modifiers (like :when to filter) and you can iterate
   through multiple sequences at the same time
     - this means you can emulate mapping and filtering over a sequence
+- use references for safe mutation of shared memory. Always do stuff in transactions with dosync
 
 functions:
 
@@ -41,3 +42,4 @@ cons - create a new sequence from a head and rest
 iterate - returns a lazy sequence of repeatedly apply a function to a value
 complement -takes a function and returns an identical one with the opposite boolean return value
 comp - compose a set of functions to return a function that does them all (right to left order)
+do - run multiple statements one after the other and return the value of the last one
