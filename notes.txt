@@ -19,7 +19,11 @@
 - for comprehensions can have modifiers (like :when to filter) and you can iterate
   through multiple sequences at the same time
     - this means you can emulate mapping and filtering over a sequence
-- use references for safe mutation of shared memory. Always do stuff in transactions with dosync
+- use references for safe mutation of shared memory. Always do stuff in transactions with dosync.
+  useful when multiple data needs updating together. If it's just 1 thing use atoms
+- quotes allow you to return the unevaluated expression rather than the value. This is useful for
+  writing macros. Syntax quoting (`) also allows you to override this behaviour using ~ to 
+  evaluate sub-parts of the expression. It will also include the namespace
 
 functions:
 
@@ -43,3 +47,4 @@ iterate - returns a lazy sequence of repeatedly apply a function to a value
 complement -takes a function and returns an identical one with the opposite boolean return value
 comp - compose a set of functions to return a function that does them all (right to left order)
 do - run multiple statements one after the other and return the value of the last one
+macroexpand - see the macro behind the quoted expression
