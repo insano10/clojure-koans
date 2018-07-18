@@ -25,6 +25,9 @@
   writing macros. Syntax quoting (`) also allows you to override this behaviour using ~ to 
   evaluate sub-parts of the expression. It will also include the namespace
 
+- anonymous function shorthand = #(... %) where % are the arguments passed in
+	- e.g. (#(+ %1 %2) 3 4) gives you 7
+
 functions:
 
 doc - prints the doc for the given function (like javadoc)
